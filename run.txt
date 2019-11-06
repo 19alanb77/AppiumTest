@@ -1,0 +1,3 @@
+Appium -> IP (e.g. 10.126.38.40) and PORT 4723
+Android Studio -> Tools -> AVD Manager -> Launch
+Eclipse -> TestNG Test
