@@ -30,21 +30,21 @@ public class CalculatorEmulator
 	
 	@Test(description = "Add two digits and check result")
 	public void calculatorTest() {
-	    WebElement six = driver.findElementById("com.android.calculator2:id/digit_6");
-	    WebElement two = driver.findElementById("com.android.calculator2:id/digit_2");
-	    WebElement plus = driver.findElementById("com.android.calculator2:id/op_add");
-            WebElement equalTo = driver.findElementById("com.android.calculator2:id/eq");
-	    WebElement results = driver.findElementById("com.android.calculator2:id/formula");
+	    	WebElement six = driver.findElementById("com.android.calculator2:id/digit_6");
+	    	WebElement two = driver.findElementById("com.android.calculator2:id/digit_2");
+	   	WebElement plus = driver.findElementById("com.android.calculator2:id/op_add");
+            	WebElement equalTo = driver.findElementById("com.android.calculator2:id/eq");
+	    	WebElement results = driver.findElementById("com.android.calculator2:id/formula");
 	        
-	    six.click();
-	    plus.click();
-	    two.click();
-	    equalTo.click();
-	    Assert.assertTrue(results.getText().equals("8"));
+	    	six.click();
+	    	plus.click();
+	    	two.click();
+	    	equalTo.click();
+	    	Assert.assertTrue(results.getText().equals("8"));
 	}
 	
 	@AfterClass(description = "Close initialized driver")
 	public void closeDriver() {
-	    driver.quit();
+	    	driver.quit();
 	}
 }
