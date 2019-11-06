@@ -35,7 +35,7 @@ public class WebEmulator
 	
 	@AfterClass(description = "Close initialized driver")
 	public void closeDriver() {
-	    driver.quit();
+	    	driver.quit();
 	}
 
 }
